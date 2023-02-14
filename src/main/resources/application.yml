@@ -1,0 +1,17 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info,health
+  endpoint:
+    health:
+      show-details: always
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://root:example@localhost:27017/?authSource=admin&readPreference=primary&directConnection=true&ssl=false
+      database: grocery-list-db
+
+server:
+  port: 8081

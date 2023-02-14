@@ -3,7 +3,7 @@ version: "3.9"
 services:
   mongodb:
     container_name: "mongo-db"
-    image: mongo:6.0.4
+    image: mongo:4.4
     restart: always
     ports:
       - "27017:27017"
